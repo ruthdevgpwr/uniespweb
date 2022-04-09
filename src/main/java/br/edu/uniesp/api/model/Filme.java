@@ -5,8 +5,12 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import java.io.Serializable;
 
+//Representa a entidade, camada mais próxima do banco de dados - o banco de dados vai ser criado em cima dessa classe
+//cada atributo é uma coluna no banco de dados
+//serializable
+
 @Entity
-public class Filme implements Serializable {
+public class Filme {
 
     @Id
     @GeneratedValue
